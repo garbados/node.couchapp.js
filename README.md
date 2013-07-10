@@ -12,15 +12,15 @@ $ npm link .
 </pre>
 
 <pre>
-$ couchapp help
-couchapp -- utility for creating couchapps
+$ couchappjs help
+couchappjs -- utility for creating couchapps
 
 Usage - old style with single app.js:
-  couchapp &lt;command> app.js http://localhost:5984/dbname [opts]
+  couchappjs &lt;command> app.js http://localhost:5984/dbname [opts]
 
 Usage - new style with multiple app files:
   directory based config specified by switch - multiple app files and pre- and post-processing capability)
-  couchapp -dc &lt;<command> &lt;appconfigdirectory> http://localhost:5984/dbname
+  couchappjs -dc &lt;<command> &lt;appconfigdirectory> http://localhost:5984/dbname
 
 Commands:
   push   : Push app once to server.
@@ -47,7 +47,7 @@ Directory-based config:
 
   beforepushsync.js and afterpushsync.js can be used to perform any before/after processing, using node.js code for example.
 
-  The sample afterpushsync.js shows lookup data being added to CouchDB after the CouchApp has been pushed.
+  The sample afterpushsync.js shows lookup data being added to CouchDB after the couchapp has been pushed.
 </pre>
 
 app.js example:
@@ -117,9 +117,9 @@ Local development server example.
 
 Start the server:
 
-    couchapp serve app.js http://localhost:5984/example_db -p 3000 -l -d attachments
+    couchappjs serve app.js http://localhost:5984/example_db -p 3000 -l -d attachments
 
 Now you can access your couchapp at http://localhost:3000/ . Code, hack and when you are
 happy with the result simply do:
 
-    couchapp push app.js http://localhost:5984/example_db
+    couchappjs push app.js http://localhost:5984/example_db
