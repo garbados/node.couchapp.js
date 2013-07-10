@@ -47,7 +47,7 @@ Directory-based config:
 
   beforepushsync.js and afterpushsync.js can be used to perform any before/after processing, using node.js code for example.
 
-  The sample afterpushsync.js shows lookup data being added to CouchDB after the couchapp has been pushed.
+  The sample afterpushsync.js shows lookup data being added to CouchDB after the CouchApp has been pushed.
 </pre>
 
 app.js example:
