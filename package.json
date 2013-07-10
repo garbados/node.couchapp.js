@@ -1,5 +1,5 @@
 {
-  "name": "couchapp",
+  "name": "couchappjs",
   "description": "Utilities for building CouchDB applications.",
   "tags": [
     "couchdb",
@@ -21,6 +21,6 @@
     "coffee-script": "*"
   },
   "bin": {
-    "couchapp": "./bin.js"
+    "couchappjs": "./bin.js"
   }
 }
